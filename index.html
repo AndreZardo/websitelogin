@@ -6,28 +6,33 @@
     <title>Login</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f2f5;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f0f0f0;
+            margin: 0;
         }
         .login-container {
             background-color: #fff;
-            padding: 20px;
+            padding: 40px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
         }
         .login-container h2 {
             margin-bottom: 20px;
+            color: #333;
         }
         .login-container input {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
-            border: 1px solid #ccc;
+            border: 1px solid #ddd;
             border-radius: 5px;
+            font-size: 16px;
         }
         .login-container button {
             width: 100%;
@@ -36,12 +41,26 @@
             color: #fff;
             border: none;
             border-radius: 5px;
+            font-size: 16px;
             cursor: pointer;
+            transition: background-color 0.3s ease;
         }
         .login-container button:hover {
             background-color: #0056b3;
         }
+        .login-container .forgot-password {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .login-container .forgot-password a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .login-container .forgot-password a:hover {
+            text-decoration: underline;
+        }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="login-container">
@@ -50,6 +69,11 @@
             <input type="text" name="username" placeholder="Nome de Usuário" required>
             <input type="password" name="password" placeholder="Senha" required>
             <button type="submit">Entrar</button>
+            <div class="forgot-password">
+                <a href="#">Esqueceu a senha?</a>
+            </div>
         </form>
     </div>
+    teste
 </body>
+</html>
